@@ -94,9 +94,17 @@ When packaged as an RPM:
 
     sudo dnf install sczip-1.0.0-1.fc44.x86_64.rpm
 
-Direct Install:
+Direct Install with RPM:
 
     sudo dnf install https://github.com/ConradoJC/sczip/releases/download/v1.0.0/sczip-1.0.0-1.fc44.x86_64.rpm
+
+When packaged as an DEB:
+
+    sudo apt-get install sczip_1.0.0_amd64.deb
+
+Direct Install with DEB:
+
+    wget -O /tmp/sczip_1.0.0_amd64.deb https://github.com/ConradoJC/sczip/releases/download/v1.0.0/sczip_1.0.0_amd64.deb && sudo apt install /tmp/sczip_1.0.0_amd64.deb
 
 The RPM declares rsync and zip as dependencies, so DNF installs them automatically.
 
